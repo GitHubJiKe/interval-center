@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lib/index.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        const ic = new IntervalCenter();
+        ic.add(sayHello, 1000).start(true)
+
+        function sayHello() {
+            document.body.querySelectorAll('*').length;
+            console.log("hello friend");
+            const helloText = document.createElement('p');
+            helloText.style.textAlign = 'center'
+            helloText.innerText = `hello friend ${Date.now()}`
+            document.body.append(helloText)
+            // ic.stop(true)
+        }
+    </script>
+</body>
+
+</html>
