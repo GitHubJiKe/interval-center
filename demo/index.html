@@ -17,13 +17,12 @@
         ic.add(sayHello, 1000).start(true)
 
         function sayHello() {
-            document.body.querySelectorAll('*').length;
-            console.log("hello friend");
+            const len = document.body.querySelectorAll('*').length;
+            console.log("hello friend", len);
             const helloText = document.createElement('p');
             helloText.style.textAlign = 'center'
-            helloText.innerText = `hello friend ${Date.now()}`
+            helloText.innerText = `hello friend ${len}`
             document.body.append(helloText)
-            // ic.stop(true)
         }
     </script>
 </body>

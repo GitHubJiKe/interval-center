@@ -1,10 +1,11 @@
 {
   "name": "interval-center",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "lib/index.js",
   "bin": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "module": "lib/index.esm.js",
   "scripts": {
     "build": "rollup -c ./rollup.config.js",
     "serve": "node ./serve.js"
